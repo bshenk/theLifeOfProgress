@@ -3,13 +3,18 @@
 		<div class="banner">
 			<div class="image" :style="styleObject"></div>
 		</div>
+		<navigation></navigation>
 	</div>
 </template>
 
 <script>
 	import './style.scss'
+	import Navigation from './navigation'
+
 	export default {
-		// Options / Data
+		components: {
+			Navigation
+		},
 		data () {
 			return {
 				styleObject: {

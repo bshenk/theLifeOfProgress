@@ -4,7 +4,7 @@
 	</div>
 </template>
 
-<script lang="">
+<script>
 	import { mapState } from 'vuex'
 	export default {
 		// Options / Data
