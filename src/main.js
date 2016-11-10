@@ -1,19 +1,17 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VueRouter from 'vue-router'
-import App from './App'
+import App from './components/App'
 
 // VueComponents
-import Hello from './components/Hello'
-import Dashboard from './components/Dashboard'
+import Routine from './components/routine/routine'
 
 // Vuex Store
 import store from './store'
 
 const router = new VueRouter({
 	routes: [
-		{ path: '/', component: Dashboard },
-		{ path: '/hello', component: Hello }
+		{ path: '/routine', component: Routine }
 	]
 });
 
@@ -24,6 +22,6 @@ const vm = new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
-	store,
-	router
+  store,
+  router
 });

@@ -1,0 +1,17 @@
+.sidebar {
+	flex: 0 0 auto;
+	width: 250px;
+	background: #fcfcfc;
+	border-right: 1px solid #e2e2e2;
+
+	.banner {
+		height: 150px;
+		border-bottom: 1px solid #e2e2e2;
+
+		.image {
+			background-size: contain;
+			height: 100%;
+			margin: 0 auto;
+		}
+	}
+}

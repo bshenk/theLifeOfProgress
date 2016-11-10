@@ -1,6 +1,6 @@
 export default {
 	state: {
-		testing: 'hahahaha'
+		title: 'Routine'
 	},
 	mutations: {
 		'UPDATE_MESSAGE' (state, payload) {
