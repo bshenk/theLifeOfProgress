@@ -1,6 +1,6 @@
 .sidebar {
 	flex: 0 0 auto;
-	width: 250px;
+	width: 300px;
 	background: #fcfcfc;
 	border-right: 1px solid #e2e2e2;
 
@@ -13,5 +13,16 @@
 			height: 100%;
 			margin: 0 auto;
 		}
+	}
+}
+
+.navigation {
+	height: 100%;
+	width: 100%;
+	margin: 40px 0;
+	float: right;
+
+	.navigation-link {
+		text-align:right;
 	}
 }
