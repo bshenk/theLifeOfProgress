@@ -1,7 +1,7 @@
 <template>
   <div class="app">
 	  <sidebar
-			bannerWidth="60%"
+			bannerWidth="80%"
 			bannerImage="./static/tlop-logo.png"
 		></sidebar>
 	  <main-content>
@@ -20,9 +20,9 @@ import Vue from 'vue'
 import Firebase from 'firebase'
 
 // CSS
-import './style.scss'
+import '../css/app.scss'
 import 'normalize.css'
-import 'milligram'
+// import 'milligram'
 import 'simple-line-icons/css/simple-line-icons.css'
 
 // Initialize Firebase
