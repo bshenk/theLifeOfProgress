@@ -1,7 +1,48 @@
+@import '../../css/colors.scss';
+
 .main-content {
 	flex: 1 0 auto;
-	width: calc(100% - 250px);
 	overflow-x: hidden;
 	overflow-y: auto;
 	background: #313131;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	// position: relative;
+
+	.left {
+		flex: 1 0 auto;
+	}
+
+	.right {
+		width: 10%;
+		flex: 0 0 auto;
+	}
+
+	p { color: white; }
+
+	h1 {
+		color: #fafafa;
+		margin: 0;
+		text-transform: capitalize;
+	}
+
+	.route-title {
+		color: black;
+		display:inline-block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-weight: 300;
+		font-size: 40px;
+		text-transform: uppercase;
+		font-weight: 300;
+		writing-mode: vertical-lr;
+		letter-spacing: 4px;
+		user-select: none;
+		cursor: default;
+
+		&.two { color: $primary-color; right: 22px; top: 22px; }
+		&.three { color: $secondary-color; right: 24px; top: 24px; }
+	}
 }

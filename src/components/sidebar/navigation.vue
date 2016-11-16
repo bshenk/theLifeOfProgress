@@ -1,7 +1,7 @@
 <template>
 	<div class="navigation">
 		<nav-link icon="home" to="/" title="Dashboard" exact />
-		<nav-link icon="map" to="/routine" title="Routine" />
+		<nav-link icon="list" to="/routine" title="Routine" />
 	</div>
 </template>
 

@@ -11,11 +11,13 @@
     "test": "npm run unit"
   },
   "dependencies": {
+    "moment": "^2.16.0",
     "simple-line-icons": "^2.4.1",
     "vue": "^2.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
+    "axios": "^0.15.2",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-plugin-transform-runtime": "^6.0.0",

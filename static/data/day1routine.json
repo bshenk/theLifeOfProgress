@@ -1,0 +1,47 @@
+{
+	"7am": {
+		"time": "7 am",
+		"tasks": [
+		  {
+				"task": "Feed Leia",
+				"completed": false,
+				"weight": 1.0,
+				"late": null,
+				"lateModifier": 0.5
+			},
+			{
+				"task": "Walk Leia",
+				"completed": false,
+				"weight": 1.0,
+				"late": null,
+				"lateModifier": 0.5
+			},
+			{
+				"task": "Shower",
+				"completed": false,
+				"weight": 1.0,
+				"late": null,
+				"lateModifier": 0.5
+			},
+			{
+				"task": "Breakfast",
+				"completed": false,
+				"weight": 1.0,
+				"late": null,
+				"lateModifier": 0.5
+			}
+		]
+	},
+	"8am": {
+		"time": "8 am",
+		"tasks": [
+			{
+				"task": "Work",
+				"completed": false,
+				"weight": 1.0,
+				"late": null,
+				"lateModifier": 0.5
+			}
+		]
+	}
+}

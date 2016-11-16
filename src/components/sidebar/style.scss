@@ -37,11 +37,11 @@
 			letter-spacing: 1px;
 
 			&.router-link-active {
-				color: black;
+				color: $primary-color;
 			}
 
 			&:hover {
-				color: $primary-color;
+				color: $secondary-color-light;
 			}
 		}
 
