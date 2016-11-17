@@ -3,28 +3,28 @@
 		"time": "7 am",
 		"tasks": [
 		  {
-				"task": "Feed Leia",
+				"name": "Feed Leia",
 				"completed": false,
 				"weight": 1.0,
 				"late": null,
 				"lateModifier": 0.5
 			},
 			{
-				"task": "Walk Leia",
+				"name": "Walk Leia",
 				"completed": false,
 				"weight": 1.0,
 				"late": null,
 				"lateModifier": 0.5
 			},
 			{
-				"task": "Shower",
+				"name": "Shower",
 				"completed": false,
 				"weight": 1.0,
 				"late": null,
 				"lateModifier": 0.5
 			},
 			{
-				"task": "Breakfast",
+				"name": "Breakfast",
 				"completed": false,
 				"weight": 1.0,
 				"late": null,
@@ -36,7 +36,7 @@
 		"time": "8 am",
 		"tasks": [
 			{
-				"task": "Work",
+				"name": "Work",
 				"completed": false,
 				"weight": 1.0,
 				"late": null,

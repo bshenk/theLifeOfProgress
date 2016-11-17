@@ -10,14 +10,19 @@
 </template>
 
 <script>
+import Vue from 'vue'
+
 // Custom components
 import Sidebar from './sidebar/'
 import MainContent from './main-content/'
 
 // Firebase/Vue
 import VueFire from 'vuefire'
-import Vue from 'vue'
 import Firebase from 'firebase'
+
+// Apollo/GraphQL
+import ApolloClient, { createNetworkInterface } from 'apollo-client'
+import VueApollo from 'vue-apollo'
 
 // CSS
 import '../css/app.scss'
@@ -39,13 +44,23 @@ const db = FirebaseApp.database();
 
 Vue.use(VueFire);
 
+// Initialize Apollo
+const apolloClient = new ApolloClient({
+	networkInterface: createNetworkInterface({
+		uri: 'http://localhost:3030/graphql',
+		transportBatching: true
+	})
+});
+
+Vue.use(VueApollo, { apolloClient });
+
 export default {
   name: 'app',
   components: {
     Sidebar,
 		MainContent
   },
-	data: function() {
+	data () {
 		return {}
 	},
 	firebase: {

@@ -10,6 +10,13 @@
 					<div class="number">{{ taskblock.time.charAt(0) }}</div>
 					<div class="am-pm">{{ taskblock.time.slice(1) }}</div>
 				</div>
+				<div class="tasks">
+					<ul>
+						<li v-for="task in taskblock.tasks">
+							<input type="checkbox" />{{ task }}
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>

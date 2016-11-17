@@ -18,11 +18,15 @@
 
 		.task-block {
 			display: flex;
+			margin-bottom: 20px;
+
+			ul { margin: 0; padding: 0 30px; list-style: none; }
 
 			.time {
 				color: rgba(255, 255, 255, 0.4);
 				font-weight: 600;
 				font-size: 14px;
+				flex: 0 0 auto;
 
 				.number {
 					font-size: 40px;
@@ -35,6 +39,11 @@
 					vertical-align: top;
 					display: inline-block;
 				}
+			}
+
+			.tasks {
+				border-left:1px solid rgba(255, 255, 255, 0.4);
+				margin-left: 20px;
 			}
 		}
 	}
