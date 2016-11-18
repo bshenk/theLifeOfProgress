@@ -27,6 +27,7 @@
 	import moment from 'moment'
 	import './style.scss'
 	import axios from 'axios'
+	import gql from 'graphql-tag'
 
 	export default {
 		beforeMount() {
@@ -49,6 +50,9 @@
 		},
 		methods: {
 
+		},
+		apollo: {
+			hello: gql`{hello}`
 		}
 	}
 </script>
