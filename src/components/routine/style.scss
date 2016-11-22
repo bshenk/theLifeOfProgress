@@ -1,3 +1,5 @@
+@import '../../css/colors.scss';
+
 .routine {
 	background: rgb(34, 34, 34);
 	border-radius: 3px;
@@ -19,6 +21,7 @@
 		.task-block {
 			display: flex;
 			margin-bottom: 20px;
+			user-select: none;
 
 			ul { margin: 0; padding: 0 30px; list-style: none; }
 
@@ -44,6 +47,44 @@
 			.tasks {
 				border-left:1px solid rgba(255, 255, 255, 0.4);
 				margin-left: 20px;
+
+				.task {
+					margin-bottom: 10px;
+				}
+
+				label {
+					font-size: 20px;
+					font-weight: 800;
+				}
+
+				.description {
+					display: inline-block;
+					vertical-align: top;
+
+					.title {
+						&.completed {
+							opacity: .2;
+							text-decoration: line-through;
+						}
+					}
+
+					.modifiers { display: block; margin-top: -3px; }
+
+					.icon {
+						display: inline-block;
+						font-size: 12px;
+						font-weight: 800;
+						padding: 3px;
+						border-radius: 3px;
+						width: 14px;
+						margin-right: 5px;
+
+						&.enabled {
+							background: $secondary-color-dark;
+							color: #222222;
+						}
+					}
+				}
 			}
 		}
 	}

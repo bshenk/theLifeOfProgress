@@ -16,3 +16,37 @@ body {
 
 	display: flex;
 }
+
+label {
+	vertical-align: top;
+}
+
+label input {
+  display: none;/* <-- hide the default checkbox */
+}
+label span {/* <-- style the artificial checkbox */
+  height: 40px;
+  width: 40px;
+  border: 1px solid $primary-color;
+  display: inline-block;
+  position: relative;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+label span:hover {
+	cursor: pointer;
+}
+
+[type=checkbox]:checked + span:before {/* <-- style its checked state..with a ticked icon */
+  content: '\5600';
+  position: absolute;
+  top: 4px;
+  left: 5px;
+	font-size: 30px;
+	color: $secondary-color;
+}
+
+[type=checkbox]:checked + span {
+	border: 1px solid $secondary-color;
+}

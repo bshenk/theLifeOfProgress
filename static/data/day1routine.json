@@ -4,31 +4,61 @@
 		"tasks": [
 		  {
 				"name": "Feed Leia",
-				"completed": false,
+				"completed": true,
 				"weight": 1.0,
-				"late": null,
-				"lateModifier": 0.5
+				"modifiers": [
+					{
+						"name": "late",
+						"enabled": true,
+						"weight": 0.5,
+						"icon": "hourglass"
+					},
+					{
+						"name": "late",
+						"enabled": true,
+						"weight": 0.5,
+						"icon": "magnet"
+					}
+				]
 			},
 			{
 				"name": "Walk Leia",
 				"completed": false,
 				"weight": 1.0,
-				"late": null,
-				"lateModifier": 0.5
+				"modifiers": [
+					{
+						"name": "Late",
+						"enabled": false,
+						"weight": 0.5,
+						"icon": "hourglass"
+					}
+				]
 			},
 			{
 				"name": "Shower",
 				"completed": false,
 				"weight": 1.0,
-				"late": null,
-				"lateModifier": 0.5
+				"modifiers": [
+					{
+						"name": "Late",
+						"enabled": false,
+						"weight": 0.5,
+						"icon": "hourglass"
+					}
+				]
 			},
 			{
 				"name": "Breakfast",
 				"completed": false,
 				"weight": 1.0,
-				"late": null,
-				"lateModifier": 0.5
+				"modifiers": [
+					{
+						"name": "Late",
+						"enabled": false,
+						"weight": 0.5,
+						"icon": "hourglass"
+					}
+				]
 			}
 		]
 	},
@@ -39,8 +69,14 @@
 				"name": "Work",
 				"completed": false,
 				"weight": 1.0,
-				"late": null,
-				"lateModifier": 0.5
+				"modifiers": [
+					{
+						"name": "Late",
+						"enabled": false,
+						"weight": 0.5,
+						"icon": "hourglass"
+					}
+				]
 			}
 		]
 	}
